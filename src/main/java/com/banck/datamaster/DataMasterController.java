@@ -28,11 +28,7 @@ public class DataMasterController {
         ValueOperations<String, String> ops = this.template.opsForValue();
         String key = "MADALITY";
         if (!this.template.hasKey(key)) {
-            ops.set(key, "VENTANILLA");
-            ops.set(key, "POS");
-            ops.set(key, "CAJERO");
-            ops.set(key, "EFECTIVO-MOVIL");
-            ops.set(key, "BANCA-MOVIL");
+            ops.set(key, "MONEDERO-YANKY");
         }
         return ops.get(key);
     }
